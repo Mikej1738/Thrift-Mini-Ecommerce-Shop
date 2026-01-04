@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gataka Threads — Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Shared header -->
+  <header>
+    <div class="navbar container">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Gataka Threads logo">
+        <span>Gataka Threads</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
+        <span class="badge">Cart: <span id="cart-count">0</span></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Contact us</h1>
+      <p class="muted">Questions, orders, or collaborations—send us a message.</p>
+
+      <form id="contact-form" novalidate>
+        <div class="form-row">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+        </div>
+        <div style="margin-top:0.8rem;">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+        </div>
+        <p id="form-error" class="error" aria-live="polite"></p>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Shared footer -->
+  <footer>
+    <div class="container">
+      <p class="muted">© <span id="year"></span> Gataka Threads — Nkaimurunya, Kajiado</p>
+    </div>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

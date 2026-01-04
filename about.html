@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gataka Threads — About</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Shared header -->
+  <header>
+    <div class="navbar container">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Gataka Threads logo">
+        <span>Gataka Threads</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
+        <span class="badge">Cart: <span id="cart-count">0</span></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <article>
+      <h1>Our story</h1>
+      <p>Gataka Threads was born in Nkaimurunya, Kajiado—where heritage meets modern design. We craft everyday clothing that honors local culture while delivering comfort and durability.</p>
+      <p>We partner with regional artisans and suppliers, prioritizing ethical production and fair pricing. Every piece is designed to be worn, loved, and lived in.</p>
+      <h2 class="section-title">What we value</h2>
+      <ul>
+        <li><strong>Quality:</strong> Fabrics that last, cuts that fit.</li>
+        <li><strong>Culture:</strong> Designs inspired by local heritage.</li>
+        <li><strong>Community:</strong> Sourcing and collaboration within Kajiado.</li>
+      </ul>
+    </article>
+  </main>
+
+  <!-- Shared footer -->
+  <footer>
+    <div class="container">
+      <p class="muted">© <span id="year"></span> Gataka Threads — Nkaimurunya, Kajiado</p>
+    </div>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

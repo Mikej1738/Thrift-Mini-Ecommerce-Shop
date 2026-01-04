@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gataka Threads — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="navbar container">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="Gataka Threads logo">
+        <span>Gataka Threads</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">Toggle Theme</button>
+        <span class="badge">Cart: <span id="cart-count">0</span></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="intro">
+        <p class="muted"><span id="greeting">Welcome</span> — <span id="today-date"></span></p>
+        <h1>Style rooted in Kajiado—crafted for everyday wear</h1>
+        <p>Discover locally inspired clothing with modern cuts and durable fabrics. Shop essentials, statement pieces, and limited drops.</p>
+        <a class="btn" href="products.html">Shop Now</a>
+      </div>
+      <img src="images/hero.webp" alt="Showcase of clothing items">
+    </section>
+
+    <section>
+      <h2 class="section-title">Featured picks</h2>
+      <div class="grid products">
+        <article class="card">
+          <img src="images/product-1.webp" alt="Maasai-inspired hoodie">
+          <div class="content">
+            <h3>Maasai-Inspired Hoodie</h3>
+            <p>Warm, soft, and bold—heritage pattern accents.</p>
+          </div>
+          <div class="footer">
+            <span class="price">KES 3,200</span>
+            <button class="btn" data-add-to-cart>Add to Cart</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/product-2.webp" alt="Everyday chinos">
+          <div class="content">
+            <h3>Everyday Chinos</h3>
+            <p>Tailored fit, breathable cotton—work to weekend.</p>
+          </div>
+          <div class="footer">
+            <span class="price">KES 2,800</span>
+            <button class="btn" data-add-to-cart>Add to Cart</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/product-3.webp" alt="Graphic tee">
+          <div class="content">
+            <h3>Graphic Tee</h3>
+            <p>Soft jersey with local art print.</p>
+          </div>
+          <div class="footer">
+            <span class="price">KES 1,200</span>
+            <button class="btn" data-add-to-cart>Add to Cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="muted">© <span id="year"></span> Gataka Threads — Nkaimurunya, Kajiado</p>
+    </div>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
